@@ -15,18 +15,7 @@
         @input="toggleSelection"
       />
     </td>
-
-    <!-- Fields -->
-    <td v-for="field in resource.fields">
-      <component
-        :is="'index-' + field.component"
-        :class="`text-${field.textAlign}`"
-        :resource-name="resourceName"
-        :via-resource="viaResource"
-        :via-resource-id="viaResourceId"
-        :field="field"
-      />
-    </td>
+    <!-- Actions -->
 
     <td class="td-fit text-right pr-6 align-middle">
       <div class="inline-flex items-center">
@@ -174,6 +163,18 @@
             </update-resource-modal>
         </portal>
       </div>
+    </td>
+
+    <!-- Fields -->
+    <td v-for="field in resource.fields">
+      <component
+        :is="'index-' + field.component"
+        :class="`text-${field.textAlign}`"
+        :resource-name="resourceName"
+        :via-resource="viaResource"
+        :via-resource-id="viaResourceId"
+        :field="field"
+      />
     </td>
   </tr>
 </template>
