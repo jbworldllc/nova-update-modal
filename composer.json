@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Sohaibafifi\\NovaUpdateModal\\": "src/"
+            "Jbworld\\NovaUpdateModal\\": "src/"
         }
     },
     "repositories": [
@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sohaibafifi\\NovaUpdateModal\\ToolServiceProvider"
+                "Jbworld\\NovaUpdateModal\\ToolServiceProvider"
             ]
         }
     },
